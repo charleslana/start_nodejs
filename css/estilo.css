@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    border: 0;
+}
+
+.coluna {
+    width: 800px;
+    margin: auto;
+}
+
+.coluna_a {
+    width: 80%;
+    height: auto;
+    float: left;
+}
+
+.coluna_b {
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+canvas {
+    margin: auto;
+    border: 3px solid #ccc;
+    display: block;
+    width: 400px;
+    height: 400px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+}

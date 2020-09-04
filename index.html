@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu game i.o</title>
+        <link rel="icon" type="image/png" href="data:image/png" />
+        <link rel="stylesheet" href="css/estilo.css" />
+        <script src="js/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <div class="coluna">
+            <div class="coluna_a">
+                <canvas id="tela" width="25" height="25"></canvas>
+            </div>
+            <div class="coluna_b">
+                <p>Classificações</p>
+            </div>
+        </div>
+
+        <script type="module">
+            
+            import criarJogo from './js/jogo.js'
+            import criarTeclasPressionadas from './js/teclas.js';
+            import renderizarTela from './js/renderizar.js';
+
+            const jogo = criarJogo();
+            const teclasPressionadas = criarTeclasPressionadas(document);
+
+            const socket = io('http://localhost:3000');
+
+            socket.on('connect', () => {
+                const jogadorId = socket.id;
+                console.log(`Jogador conectado no Servidor com a id: ${jogadorId}`);
+
+                const tela = document.getElementById('tela');
+                renderizarTela(tela, jogo, requestAnimationFrame, jogadorId);
+            });
+
+            socket.on('disconnect', () => {
+                console.log('O servidor foi desconectado.');
+                teclasPressionadas.limparObservadores();
+            });           
+
+            socket.on('inicio', (atual) => {
+                const jogadorId = socket.id;
+                jogo.setarAtual(atual);
+
+                teclasPressionadas.registrarJogadorId(jogadorId);
+                teclasPressionadas.escreve(jogo.moverJogador);
+                teclasPressionadas.escreve((comando => {
+                    socket.emit(comando.tipo, comando);
+                }));
+
+            });
+
+            socket.on('adicionar-jogador', (comando) => {
+                console.log(`Recebendo o tipo de comando ${comando.tipo} do id: ${comando.jogadorId} `);
+                jogo.adicionarJogadores(comando);
+            });
+
+            socket.on('remover-jogador', (comando) => {
+                console.log(`Recebendo o tipo de comando ${comando.tipo} do id: ${comando.jogadorId} `);
+                jogo.removerJogadores(comando);
+            });
+
+            socket.on('mover-jogador', (comando) => {
+                console.log(`Recebendo o tipo de comando ${comando.tipo} do id: ${comando.jogadorId} `);
+                const jogadorId = socket.id;
+
+                if(jogadorId != comando.jogadorId) {
+                    jogo.moverJogador(comando);
+                }
+            });
+
+            socket.on('adicionar-fruta', (comando) => {
+                console.log(`Recebendo o tipo de comando ${comando.tipo} do id: ${comando.frutaId} `);
+                jogo.adicionarFrutas(comando);
+            });
+
+            socket.on('remover-fruta', (comando) => {
+                console.log(`Recebendo o tipo de comando ${comando.tipo} do id: ${comando.frutaId} `);
+                jogo.removerFrutas(comando);
+            });
+
+        </script>
+
+    </body>
+</html>

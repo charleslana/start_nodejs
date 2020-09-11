@@ -1,1 +1,58 @@
-<mxfile host="app.diagrams.net" modified="2020-09-11T23:00:59.996Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" version="13.6.10" etag="5Lr1UMtnmGRX-9Brj-z4" type="github"><diagram id="Tz9BbOwiqlxK9YdUT99X">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-09-11T23:05:38.633Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="0SeJ9I8Rf97Y5W_xga3v" version="13.6.10" type="github">
+  <diagram id="Tz9BbOwiqlxK9YdUT99X" name="Page-1">
+    <mxGraphModel dx="868" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Y5o37WmTDis6vU1YYDRS-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="110" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5o37WmTDis6vU1YYDRS-2" value="Cadastrar Aluno" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5o37WmTDis6vU1YYDRS-3" value="Cadastrar Professor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="170" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5o37WmTDis6vU1YYDRS-4" value="" style="endArrow=none;html=1;" edge="1" parent="1" target="Y5o37WmTDis6vU1YYDRS-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="160" as="sourcePoint" />
+            <mxPoint x="140" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5o37WmTDis6vU1YYDRS-5" value="" style="endArrow=none;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Y5o37WmTDis6vU1YYDRS-3" target="Y5o37WmTDis6vU1YYDRS-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="270" as="sourcePoint" />
+            <mxPoint x="440" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5o37WmTDis6vU1YYDRS-6" value="Validar CPF" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="90" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5o37WmTDis6vU1YYDRS-7" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="Y5o37WmTDis6vU1YYDRS-3" target="Y5o37WmTDis6vU1YYDRS-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="270" as="sourcePoint" />
+            <mxPoint x="440" y="220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="590" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5o37WmTDis6vU1YYDRS-8" value="Cadastrar Qualificação" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5o37WmTDis6vU1YYDRS-9" value="Cadastrar Currículo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5o37WmTDis6vU1YYDRS-11" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1" source="Y5o37WmTDis6vU1YYDRS-8" target="Y5o37WmTDis6vU1YYDRS-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="400" as="sourcePoint" />
+            <mxPoint x="440" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="290" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

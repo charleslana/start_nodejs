@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-28T15:55:29.742Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="OKI3HHZCFwg6FxzUC8AM" version="13.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-28T15:58:26.619Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="xkMs0s22KarFumBEYsRi" version="13.7.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="868" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -32,12 +32,27 @@
           <mxGeometry x="510" y="235" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="_za1WFgPB-2L5A8JAV1J-6" value="Ler consultas" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="600" y="380" width="140" height="70" as="geometry" />
+          <mxGeometry x="130" y="550" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="_za1WFgPB-2L5A8JAV1J-11" value="Manter alimentos" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="280" y="500" width="140" height="70" as="geometry" />
+          <mxGeometry x="530" y="400" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="_za1WFgPB-2L5A8JAV1J-12" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_za1WFgPB-2L5A8JAV1J-4" target="_za1WFgPB-2L5A8JAV1J-11">
+        <mxCell id="_za1WFgPB-2L5A8JAV1J-12" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_za1WFgPB-2L5A8JAV1J-4" target="_za1WFgPB-2L5A8JAV1J-11">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="450" as="sourcePoint" />
+            <mxPoint x="490" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_za1WFgPB-2L5A8JAV1J-13" value="Cadastrar consultas" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="490" y="550" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_za1WFgPB-2L5A8JAV1J-16" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_za1WFgPB-2L5A8JAV1J-6" target="_za1WFgPB-2L5A8JAV1J-13">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="450" as="sourcePoint" />
+            <mxPoint x="490" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_za1WFgPB-2L5A8JAV1J-17" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_za1WFgPB-2L5A8JAV1J-4" target="_za1WFgPB-2L5A8JAV1J-6">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="330" y="450" as="sourcePoint" />
             <mxPoint x="490" y="450" as="targetPoint" />

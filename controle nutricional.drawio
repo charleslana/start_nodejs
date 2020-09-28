@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-28T15:47:28.765Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="GqRAvEG63Tjn8ID6vKjm" version="13.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-28T15:49:54.034Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="JTLw3EFVVnz2_BfuXt6W" version="13.7.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="868" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -12,6 +12,18 @@
         </mxCell>
         <mxCell id="_za1WFgPB-2L5A8JAV1J-2" value="Nutricionista" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="120" y="130" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_za1WFgPB-2L5A8JAV1J-3" value="Paciente" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="120" y="370" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_za1WFgPB-2L5A8JAV1J-4" value="Manter dados" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="280" y="365" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_za1WFgPB-2L5A8JAV1J-5" value="Agendar" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="530" y="340" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_za1WFgPB-2L5A8JAV1J-6" value="Ler consultas" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="540" y="430" width="140" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
